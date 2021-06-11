@@ -6,3 +6,4 @@ rusty-tags.vi
 .idea/
 .vscode
 venv/*
+*.swp

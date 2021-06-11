@@ -23,6 +23,7 @@ members = [
         "parquet_derive_test",
         "arrow-flight",
         "integration-testing",
+		"arrow/examples",
 ]
 
 # this package is excluded because it requires different compilation flags, thereby significantly changing

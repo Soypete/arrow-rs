@@ -16,8 +16,7 @@
 // under the License.
 
 ///! Many builders are available to easily create different types of arrow arrays
-extern crate arrow;
-
+use arrow;
 use std::sync::Arc;
 
 use arrow::array::{
@@ -27,7 +26,7 @@ use arrow::array::{
 use arrow::buffer::Buffer;
 use arrow::datatypes::{DataType, Date64Type, Field, Time64NanosecondType, ToByteSlice};
 
-fn main() {
+pub fn make_arrays() {
     // Primitive Arrays
     //
     // Primitive arrays are arrays of fixed-width primitive types (bool, u8, u16, u32,

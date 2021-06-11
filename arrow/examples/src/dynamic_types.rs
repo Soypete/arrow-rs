@@ -18,7 +18,7 @@
 ///! This example demonstrates dealing with mixed types dynamically at runtime
 use std::sync::Arc;
 
-extern crate arrow;
+// extern crate arrow;
 
 use arrow::array::*;
 use arrow::datatypes::*;
