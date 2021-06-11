@@ -18,14 +18,14 @@
 ///! This example demonstrates dealing with mixed types dynamically at runtime
 use std::sync::Arc;
 
-// extern crate arrow;
+use arrow;
 
 use arrow::array::*;
 use arrow::datatypes::*;
 use arrow::error::Result;
 use arrow::record_batch::*;
 
-fn main() -> Result<()> {
+pub fn infer_types() -> Result<()> {
     // define schema
     let schema = Schema::new(vec![
         Field::new("id", DataType::Int32, false),
